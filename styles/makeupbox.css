@@ -1,6 +1,7 @@
 /* Common share styles */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
 
 /* Nav releted styles  */
@@ -39,6 +40,10 @@ nav li a {
 }
 
 /* main camera  style  */
+.left-content {
+    width: 50%;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -72,6 +77,8 @@ nav li a {
 
 .main-camera {
     background-image: url('/images/Circle\ design.svg');
+    width: 475px;
+    height: 480px;
 }
 
 /* company icons */
@@ -176,21 +183,69 @@ nav li a {
 footer {
     text-align: center;
     background: #0A0826;
-    padding: 50px 589px ;
+    padding: 50px 589px;
 }
+
 .footer-title {
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .copyright,
 .all-right {
-    color:#D9DBE1;
+    color: #D9DBE1;
     font-size: 0.9rem;
     font-weight: 700;
 }
-.social-icons{
-    display: grid;
-    grid-template-rows: repeat(1, 4fr);
-    gap: 80px;
+
+.abc{
+    margin-right: 20px;
 }
+
+/* Mobile device responsive */
+@media screen and (max-width: 576px) {
+    body {
+        margin: 0 auto;
+    }
+
+    nav,
+    nav ul,
+    .logos-img,
+    .card-full-card,
+    .last-section {
+        flex-direction: column;
+    }
+
+    .card-all-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    footer ,
+    nav,
+    .left-content,
+    .container
+    {
+        padding: 5px;
+    }
+
+    .container-last,
+    .left-content {
+        width: 100%;
+    }
+    nav li{
+        display: none;
+    }
+    .journey-title,
+    .discription{
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {}
