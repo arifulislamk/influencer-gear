@@ -1,17 +1,28 @@
 
 /* Common share styles */
-
+body{
+    font-family: 'Poppins', sans-serif;  
+}
 /* Nav releted styles  */
+
 nav{
     display: flex;
     justify-content: space-between ;
     padding: 80px 120px 0px 120px;
     align-items: center;
+    color: #3A3A3A;
+
+}
+.nav-title{
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
 
 }
 nav ul{
     display: flex ;
     gap: 34px;
+    
     
 }
 nav li{
@@ -19,6 +30,49 @@ nav li{
 }
 nav li a{
     text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+}
+
+/* Journey nav style  */
+.container{
+    display: flex;
+    justify-content: space-between ;
+    padding: 80px 165px 0px 120px;
+    align-items: center;
+
+}
+.journey-title{
+    color: #3A3A3A;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+.discription{
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    gap: 15px;
+    display: inline-flex;
+}
+.main-camera{
+    background-image: url('/images/Circle\ design.svg');
+}
+/* company icons */
+.logos-img{
+    display: flex;
+    justify-content: space-around;
 }
 /* Main styles */
+.card-all-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 /* Footer styles */
